@@ -42,9 +42,15 @@ app.get("/results", function (req, res) {
             }
             if (!error && response.statusCode == 200) {
                 var data = JSON.parse(body);
-                res.render("results", {
-                    data: data,
-                });
+                if (data.Error === "Movie not found!") {
+                    req.flash("error", data.Error);
+                    res.redirect("/");
+                } else {
+                    res.render("results", {
+                        data: data,
+                    });
+                    // console.log(data.Error);
+                }
             }
         });
     }
