@@ -121,6 +121,13 @@ strong {
     border-radius: 16px 16px 16px 6px;
     font-weight: 600;
 }
+#strong{
+    background: rgb(240, 128, 128);
+    padding: 20px;
+    margin-right: 5px;
+    border-radius: 16px 16px 16px 6px;
+    font-weight: 600;
+}
 
 #hero {
     position: relative;

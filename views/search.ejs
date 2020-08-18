@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
     <div class="sq d-none d-md-none d-lg-block d-xl-block">
         <div class="container">
             <h1 class="s display-4">CHNsOllywood Search</h1>
@@ -31,6 +32,7 @@
         </div>
     </div>
     <div class="container d-xs-block d-lg-none my-4 mt-5 pt-5 px-3">
+
         <img class="invert" id="hero" style="width: 100px; width: 100px;"
             src="https://www.pngkit.com/png/full/44-445715_air-force-logo-png-vector-air-force-symbol.png" alt="" />
         <h1 class="s display-4-md">CHNsOllywood Search</h1>
@@ -48,6 +50,15 @@
             </button>
         </form>
     </div>
+    <% if (message.length!=0){ %>
+    <div class="container">
+        <div class="mt-5 text-center" role="alert">
+            <strong id="strong">
+                <%= message %>
+            </strong>
+        </div>
+    </div>
+    <% } %>
 </body>
 
 </html>
