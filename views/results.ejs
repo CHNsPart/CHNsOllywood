@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="app.css">
+    <title>Result</title>
+</head>
+<body>
+    <div class="container">
+        <h3>
+            <a href="/"><i class="fas fa-backward"></i></a>
+            Result
+            <small class="text-muted">of your search</small>
+          </h3>
+    <ol>
+        <h1 class="display-4"> <%= data.Title %> </h3>
+        <li><strong>Year: </strong><%= data.Year %></li>
+        <li><strong>Type: </strong><%= data.Type %></li>
+        <li><strong>Rated: </strong><%= data.Rated %></li>
+        <li><strong>Released: </strong><%= data.Released %></li>
+        <li><strong>Runtime: </strong><%= data.Runtime %></li>
+        <li><strong>Genre: </strong> <%= data.Genre %></li>
+        <li><strong>Director: </strong><%= data.Director %></li>
+        <li><strong>Writer: </strong> <%= data.Writer %></li>
+        <li><strong>Actors: </strong><%= data.Actors %></li>
+        <li><blockquote class="blockquote"><strong>Plot: </strong><p class="mb-0">"<%= data.Plot %>"</p></blockquote></li>
+        <li><strong>Language: </strong><%= data.Language %></li>
+        <li><strong>Country: </strong><%= data.Country %></li>
+        <li><strong>Awards: </strong><%= data.Awards %></li><img src="<%= data.Poster %>"></img>
+        <li><strong>IMDB Ratings: </strong><%= data.imdbRating %></li>
+        <li><strong>IMDB Votes: </strong><%= data.imdbVotes %></li>
+        <li><strong>Box-Office: </strong><%= data.BoxOffice %></li>
+        <li><strong>Production: </strong><%= data.Production %></li>
+    </ol>
+    </div> 
+</body>
+</html>

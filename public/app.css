@@ -1,0 +1,201 @@
+* {
+    font-family: Lato;
+    color: aliceblue;
+}
+
+body {
+    background: url(./img/Things.png) fixed center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.btn-light,
+.btn-primary:light,
+.btn-light:active,
+.btn-light:visited {
+    outline: none;
+    color: turquoise;
+    background-color: turquoise;
+}
+
+.sq {
+    border: 5px solid whitesmoke;
+    padding: 50px;
+    margin-top: 100px;
+    margin-right: 170px;
+    margin-left: 170px;
+}
+
+.s {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: turquoise;
+}
+
+.sa {
+    color: rgb(255, 255, 255);
+    opacity: 90%;
+}
+
+h3 {
+    margin-top: 30px;
+}
+
+input {
+    outline: none;
+    margin-bottom: 15px;
+    border-radius: 0 16px 0 16px;
+    box-shadow: 1px 1px rgb(92, 92, 92), 3px 3px rgb(51, 51, 51), 6px 6px rgb(0, 0, 0);
+    transition: all 0.4s ease;
+}
+
+input:focus {
+    border-radius: 16px 0 16px 0;
+    color: #333;
+    padding: 5px;
+}
+
+::placeholder:focus {
+    margin-left: 50px;
+}
+
+::placeholder {
+    margin-left: 50px;
+    padding: 5px;
+}
+
+.fa-file-video-o {
+    color: #333;
+    background: none;
+    height: 100px;
+    width: 100px;
+}
+
+.fa-backward {
+    margin-right: 5px;
+    transition: all 0.3s ease;
+}
+
+.fa-backward:hover {
+    font-size: 1.6rem;
+    color: rgb(240, 128, 128);
+}
+
+
+.fa-facebook-f:hover {
+    color: rgb(64, 182, 255);
+    background: none;
+    font-size: 2rem;
+}
+
+.fa-envelope:hover {
+    color: rgb(80, 255, 64);
+    background: none;
+    font-size: 2rem;
+}
+
+.fa-instagram:hover {
+    color: rgb(240, 128, 128);
+    background: none;
+    font-size: 2rem;
+}
+
+.fa-facebook-f,
+.fa-instagram,
+.fa-envelope {
+    color: whitesmoke;
+    transition: all 0.6s ease-in-out;
+    padding: 5px;
+}
+
+span {
+    background: none;
+}
+
+strong {
+    background: rgb(240, 128, 128);
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 16px 16px 16px 6px;
+    font-weight: 600;
+}
+
+#hero {
+    position: relative;
+    margin-left: px;
+    color: rgb(255, 255, 255);
+    transition: all 0.4s ease;
+}
+
+#hero:hover {
+    transform: scale(3.0);
+    color: rgb(240, 128, 128);
+    filter: invert(100%);
+    transform: rotate(180deg);
+}
+
+.invert {
+    filter: invert(100%);
+
+    /* List element */
+    li {
+        counter-increment: index;
+        display: flex;
+        align-items: center;
+        padding: 12px 0;
+        box-sizing: border-box;
+    }
+
+
+    /* Element counter */
+    li::before {
+        content: counters(index, ".", decimal-leading-zero);
+        font-size: 1.5rem;
+        text-align: right;
+        font-weight: bold;
+        min-width: 50px;
+        padding-right: 12px;
+        font-variant-numeric: tabular-nums;
+        align-self: flex-start;
+        background-image: linear-gradient(to bottom, aquamarine, lightpink);
+        background-attachment: fixed;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+    /* Element separation */
+    li+li {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @use postcss-preset-env {
+        stage: 0;
+
+        autoprefixer: {
+            grid: true;
+        }
+
+        browsers: last 2 versions
+    }
